@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    <header class="header--dark">
+        <h3 class="header__title">Admin Page</h3>
+        <i class="fa fa-bars header__icon" aria-hidden="true"></i>
+        <div class="header__search">
+            <form method="GET" action="https://en.uncyclopedia.co/w/index.php">
+            <input type="text" class="search__input" name="search" placeholder="Search for...">
+            <button class="search__btn"><div ><i class="fa fa-solid fa-search"></i></div></button>
+            </form>
+        </div>
+        <i class="fa fa-user header__icon" aria-hidden="true"></i>
+        <i class="fa fa-caret-down header__icon" aria-hidden="true"></i>
+    </header>
+    <main>
+        <aside>
+            <nav class="main__nav">
+                <ul class="nav__ul">
+                    <li><h4>Core</h4></li>
+                    <li class="selected"><a href="#" class="selected"><i class="fa fa-solid fa-tachometer selected"></i><span class="selected">Dashboard</span></a></li>
+                    <li><h4>Interface</h4></li>
+                    <li><a href="#"><i class="fa fa-solid fa-windows"></i>Layouts<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-solid fa-bookmark"></i>Pages<i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    <li><h4>Addons</h4></li>
+                    <li><a href="#"><i class="fa fa-solid fa-area-chart"></i>Charts</a></li>
+                    <li><a href="#"><i class="fa fa-solid fa-table"></i>Tables</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            <h1>Dashboard</h1>
+            <div class="main__breadcrumb">Dashboard</div>
+            <div class="main__cards">
+                <div class="main__card main__card--blue">
+                    <div class="card__top">
+                        Primary Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="main__card main__card--yellow no-left-margin">
+                    <div class="card__top">
+                        Warning Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="main__card main__card--green">
+                    <div class="card__top">
+                        Success Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="main__card main__card--red no-right-margin">
+                    <div class="card__top">
+                        Danger Card
+                    </div>
+                    <div class="card__bottom">
+                        View Details<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js">
+    </script>
+</body>
+</html>
