@@ -176,6 +176,7 @@ aside
 .main__cards
 {
     display: flex;
+    flex-wrap: nowrap;
     padding-left: 2%;
     padding-right: 2%;
     gap: 2%;
@@ -239,19 +240,35 @@ aside
     padding: 5px;
 }
 
-/*
-.no-left-margin
+@media only screen and (max-width: 700px)
 {
-    margin-left: 0;
+    .main__card
+    {
+        flex: 100%;
+        width: 100%;
+    }
+
+    .main__cards
+    {
+        flex-wrap: wrap;
+    }
+
+    .hideable
+    {
+        display: none;
+    }
+    
+    .nav__ul li h4
+    {
+        display: none;
+    }
+    
+    .header__menu
+    {
+        float: left;
+        padding-left: 15px;
+    }
 }
-
-.no-right-margin
-{
-    margin-right: 0;
-}
-*/
-
-
 
 
 
